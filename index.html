@@ -1,7 +1,587 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>VS Enterprise</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+<!--
+
+Template 2077 Modern Town
+
+http://www.tooplate.com/view/2077-modern-town
+
+-->
+<!--
+	<link rel="stylesheet" href="https://viratcoolingsystems.blob.core.windows.net/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://viratcoolingsystems.blob.core.windows.net/css/animate.min.css">
+	<link rel="stylesheet" href="https://viratcoolingsystems.blob.core.windows.net/css/font-awesome.min.css">
+   	<link rel="stylesheet" href="https://viratcoolingsystems.blob.core.windows.net/css/owl.theme.css">
+	<link rel="stylesheet" href="https://viratcoolingsystems.blob.core.windows.net/css/owl.carousel.css">
+	<link rel="stylesheet" href="https://viratcoolingsystems.blob.core.windows.net/css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    -->
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+   	<link rel="stylesheet" href="css/owl.theme.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        
+	
+</head>
+
+
+
+
+<style>.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 7.65%;
+	left: 0;
+	background:rgba(230,230,230,1);
+	z-index:10000;
+}
+
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	overflow: hidden;
+	border: none;
+	
+	background: url(http://tympanus.net/Development/FullscreenOverlayStyles/img/cross.png) no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+}
+
+/* Menu style */
+.overlay nav {
+	text-align: center;
+	position: relative;
+	top: 37%;
+	height: 60%;
+	font-size: 14px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.overlay ul li {
+	display: block;
+	height: 20%;
+	height: calc(100% / 5);
+	min-height: 54px;
+}
+
+.overlay ul li a {
+	font-weight: 300;
+	display: block;
+	color: #fff;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #e3fcb1;
+}
+
+/* Effects */
+.overlay-hugeinc {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-hugeinc.open {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.overlay-hugeinc nav {
+	-webkit-perspective: 1200px;
+	perspective: 1200px;
+}
+
+.overlay-hugeinc nav ul {
+	opacity: 0.4;
+	-webkit-transform: translateY(-25%) rotateX(35deg);
+	transform: translateY(-25%) rotateX(35deg);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.overlay-hugeinc.open nav ul {
+	opacity: 1;
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+
+.overlay-hugeinc.close nav ul {
+	-webkit-transform: translateY(25%) rotateX(-35deg);
+	transform: translateY(25%) rotateX(-35deg);
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
+}
+
+</style>
+
+
+
+
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+
+<!-- Home section
+================================================== -->
+<section id="home" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12">
+
+				<h1 class="wow fadeInDown" style="color:#fff; text-shadow: 6px 6px 0px rgba(0,0,0,0.2); letter-spacing:12px;"><img src="images/Logo-new-metal.png" height="300px" width="300px" /></h1>
+  				<h3 class="wow fadeInDown" data-wow-delay="0.2s"style="color:#fff; font-size:35px; text-shadow: 1px 1px 0px rgba(0,0,255,0.5);">VS ENTERPRISE</h3>
+                <h3 class="wow fadeInDown" data-wow-delay="0.2s"style="color:#ccc; font-size:26px; text-shadow: 1px 1px 0px rgba(0,0,255,0.5);">Car	 Mats</h3>
+			<!--	<a href="#" class="btn btn-danger wow fadeInUp" data-wow-delay="0.4s">DOWNLOAD</a>-->
+				<a href="#about" class="btn btn-default smoothScroll wow fadeInUp" data-wow-delay="0.6s">Scroll Down</a>
+			</div>
+
+		</div>
+	</div>		
+</section>
+
+
+<!-- Navigation section
+================================================== -->
+<section class="navbar navbar-default navbar-fixed-top sticky-navigation" role="navigation">
+	<div class="container">
+
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand"><span style="font-size:34px; color:#000;">VS </span><span style="color:#444"> Enterprise</span></a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right main-navigation">
+				<li><a href="#home" class="smoothScroll">HOME</a></li>
+				<li><a href="#about" class="smoothScroll">KNOW US</a></li>
+               <!-- <li><a href="#testimonial" class="smoothScroll">OVERVIEW</a></li>-->
+				<li><a href="#blog" class="smoothScroll">PRODUCTS</a></li>
+				<li><a href="#contact" class="smoothScroll">CONTACT US</a></li>
+			</ul>
+		</div>
+
+	</div>
+</section>
+
+
+<!-- about section
+================================================== -->
+<section id="about" class="paralla-section">
+	<div class="container">
+		<div class="row">
+        
+			<div class="col-md-6 col-sm-12">
+<!--				<img src="https://viratcoolingsystems.blob.core.windows.net/images/about-img-1.jpg" class="img-responsive" alt="about img 1">-->
+                				<img src="images/about-img-1.jpg" class="img-responsive" alt="about img 1">
+			</div>
+            
+			<div class="col-md-6 col-sm-12">
+				<div class="about-des">
+<!--					<h4>The most active lifestyle</h4>-->
+					<h3>Know a bit about VS Enterprise</h3>
+					<p>V.S. Enterprise was started in 2015. We provide different types of car floor mat with perfect fitting. We consider the sale merely the beginning of the relationship with our client. We strongly believe that this will help our customers to choose a right product for their applications.  </p>
+				</div>
+			</div>
+
+		</div>
+        
+        <div class="row">
+			
+			<div class="col-md-6 col-sm-12">
+				<div class="about-des">
+					<!--<h4>New Community Mall</h4>-->
+					<h3>What we DO?</h3>
+					<p>We produce 110 different car’s floor mat. We especially engaged in the manufacturing of car floor mat. some of our products are <br><ul>
+<li>Car floor mat </li> <br>
+<li>7D  Car floor mat</li><br>
+<li>Coil floor mat</li>
+</ul>
+</p>
+				</div>
+			</div>
+            
+            <div class="col-md-6 col-sm-12">
+				<img src="images/about-img-2.jpg" class="img-responsive" alt="about img 2">
+			</div>
+
+		</div>
+	</div>
+</section>
+<!--
+<!-- Testimonial section
+================================================== 
+<section id="testimonial" class="parallax-section">
+	<div class="container">
+ 
+		<div class="row">
+
+			<!-- Service Owl Carousel section
+			================================================== 
+			<div id="owl-testimonial" class="owl-carousel">
+
+				<div class="item">
+					<div class="row">
+						<div class="col-md-offset-2 col-md-8">
+							<img src="https://viratcoolingsystems.blob.core.windows.net/images/testimonial-img-1.jpg" class="img-responsive" alt="testimonial img">
+							<h2>Water Chillers</h2>
+							<p>This will basically be brief about your product.Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="row">
+						<div class="col-md-offset-2 col-md-8">
+							<img src="https://viratcoolingsystems.blob.core.windows.net/images/testimonial-img-2.jpg" class="img-responsive" alt="testimonial img">
+							<h2>Water Coolers</h2>			
+                            				<p>This will basically be brief about your product.Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque.</p>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="row">
+						<div class="col-md-offset-2 col-md-8">
+							<img src="https://viratcoolingsystems.blob.core.windows.net/images/testimonial-img-3.jpg" class="img-responsive" alt="testimonial img">
+							<h2>Industrial Freezers</h2>
+			<p>This will basically be brief about your product.Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque.</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+
+
+		</div>
+	</div>
+</section>
+
+-->
+
+
+
+
+
+<section id="counter" style="margin-top:0px" class="paralla-section">
+	<div class="container">
+   
+   
+				<p><a href="#!" class="trigger-overlay" data-overlay="layer3"></a></p>
+                <div class="overlay overlay-hugeinc" id="layer3">
+			<button type="button" class="overlay-close">Close</button>
+			<nav>
+				<ul>
+					<li><a href="#!">PLEASE</a></li>
+					<li style="color:white!important";>Download the <a href="https://github.com/ernestortiz/" target="_blank">files at github</a> and notice the changes<br/>in the javascript and the html file...</li>
+				</ul>
+			</nav>
+		</div>
+
+     
+     
+		<div class="row">
+
+			<div class="col-md-4 col-sm-4 counter-item">	
+				<h3 class="counter-number" data-from="1" data-to="20" data-speed="1000"></h3>
+				<span class="counter-text">Products</span>
+            </div> 
+            <div class="col-md-4 col-sm-4 counter-item">	
+				<h3 class="counter-number" data-from="1" data-to="512" data-speed="2000"></h3>
+				<span class="counter-text">Workers</span>
+            </div>   
+            <div class="col-md-4 col-sm-4 counter-item">	
+				<h3 class="counter-number" data-from="1" data-to="2024" data-speed="3000"></h3>
+				<span class="counter-text">Delighted Customers</span>
+            </div> 
+
+              
+
+		</div>
+	</div>
+    
+</section>
+
+
+<!-- blog section
+================================================== -->
+<section id="blog" class="paralla-section">
+	<div class="container" >
+		<div class="row" >
+
+			<h2>OUR PRODUCTS</h2>
+			<h4>Efficient-Economic-Environment Friendly</h4>
+
+<div class="row">
+<h4 style="text-align:left">Floor car mats</h4>
+<p style="text-align:justify;">With our vast industry experience, we have established ourselves as the prominent manufacturer, exporter and supplier of Floor Car Mats. Our offered range is manufactured under the guidance of our qualified professionals using high grade components, raw material and innovative technology in accordance with set industrial standards. The entire range is widely demanded in the market for their excellent design, corrosion-resistance body and low maintenance. Moreover, clients can avail the entire range from us in various customized options and at industry leading prices.</p>
+
+			<div class="blog-masonry masonry-true">
+            
+            
+
+				<div class="post-masonry col-md-4 col-sm-6">
+					<div class="blog-wrapper">
+						<img src="images/blog-img-2.jpg" class="img-responsive" alt="blog img">
+						<h3><a href="#">Car Floor Mat</a></h3>
+						<!--<small>August 26, 2016</small>-->
+						<p>	Rugged and sporty with un-beatable carpet protection for whatever nature hurls at you.</p>
+					</div>
+				</div>
+                
+				<div class="post-masonry col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+					<div class="blog-wrapper">
+						<img src="images/blog-img-10.jpg" class="img-responsive" alt="blog img">
+						<h3><a href="#!" class="trigger-overlay" data-overlay="layer3">7D Car Floor Mat</a></h3>
+						<!--<small>August 22, 2016</small>-->
+						<p>Perfectly matches with the countours of the vehicle with indestructible and a soft and comfortablel cushion.</p>
+					</div>
+				</div>
+                
+                <div class="overlay overlay-hugeinc" id="layer3">
+			<button type="button" class="overlay-close">Close</button>
+            <div class="container">
+            <div class="row">&nbsp;</div>
+                        <div class="row">&nbsp;</div>
+                                    <div class="row">&nbsp;</div>
+            <div class="row">
+			<h2 style="text-align:left; padding-left:2%">This is a Sample OverLay</h2>
+            <h3 style="text-align:justify; padding-left:6%"> Product details and specs will be displayed here.</h3>
+            <div class="col-md-3 img-responsive center-block">
+            		<img src="https://viratcoolingsystems.blob.core.windows.net/images/air-cooled-packaged-chiller.png" class="img-responsive" alt="blog img">
+				
+            </div>
+            <div class="col-md-8">
+            <p>Lorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate nequeLorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate nequeLorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate nequeLorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate nequeLorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate nequeLorem ipsum dolor sit amet, maecenas eget vestibulum justo imperdiet, wisi risus purus augue vulputate voluptate neque</p>
+            </div>
+
+            </div>
+            </div>
+		</div>
+        
+        
+        
+				<div class="post-masonry col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+					<div class="blog-wrapper">
+						<img src="images/blog-img-3.jpg" class="img-responsive" alt="blog img">
+						<h3><a href="#!" class="trigger-overlay" data-overlay="layer3">Coil Floor Mat</a></h3>
+						<!--<small>August 14, 2016</small>-->
+						<p>Heavy duty floor mats are made ultra tough to endure whatever torture test you throw at them.</p>
+					</div>
+				</div>
+       </div>
+       </div>
+       
+       
+       
+       
+        
+        
+        
+        
+              
+              
+              
+              
+              
+              
+  
+        
+        
+              
+              
+              
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- Contact section
+================================================== -->
+<section id="contact" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<!-- Contact form section
+			================================================== -->
+			<div class="col-md-6 col-sm-6 wow fadeInDown" data-wow-delay="0.6s">
+				<form action="#" method="post">
+					<div class="col-md-12 col-sm-12">
+						<input type="text" class="form-control" placeholder="Name" name="name" id="name">
+						<input type="email" class="form-control" placeholder="Email" name="email" id="email">
+                        <input type="text" class="form-control" placeholder="Subject" name="subject">
+                        <textarea name="message" rows="8" class="form-control" id="message" placeholder="Message" message="message"></textarea>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<input name="submit" type="submit" class="form-control" id="submit" value="Ask Us">
+					</div>
+				</form>
+			</div>
+
+			<!-- Contact detail section
+			================================================== -->
+			<div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+				<div class="contact-detail">
+					<h2>CONTACT US</h2>
+						<div>
+							<h4>VS Enterprise</h4>
+							<p>A-14/8, Road no. 7,<br> Udhyognagar, Udhna,<br> Surat – 394210
+
+
+
+</p>
+						</div>
+						<div>
+							<h4>Talk to Us</h4>
+							<p>Mail: sales@vsenterprise.in </p>
+							<p>Mo.: +91 98794 22176 &nbsp;</p>
+						</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- Footer section
+================================================== -->
+<footer>
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.3s">
+                        <img src="images/Logo-new.png" height="100%" width="100%" style="margin-top:0%;">
+            </div>	
+
+				
+
+            
+			<div class="link-list col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
+				<!--<h2>Company</h2>
+				<a href="#">About</a>
+                <a href="#">Blog</a>
+				<a href="#">Team</a>
+				<a href="#">Career</a>-->
+                <h2>VS Enterprise</h2>
+
+				<p>Certified car mats manufracturers. vs enterprise logo site & content is licensed and should not be copied unless written permission given by founders.</p>
+				<p>Copyright &copy; 2017 VS Enterprise | Design: Jigar Mangukiya</p>
+
+			</div>
+			<div class="link-list col-md-2 col-sm-2 wow fadeInUp" data-wow-delay="0.6s">
+				<h2>Support</h2>
+				<a href="#">Email Us</a>
+				<a href="#">FAQs</a>
+				<a href="#">Service Terms</a>
+				<a href="#">Licenses</a>
+			</div>
+<!--			<div class="col-md-1 col-sm-2 wow fadeInUp" data-wow-delay="0.9s">
+				<h2>Network</h2>
+				<ul class="social-icon">
+					<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.3s"></a></li>
+					<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.6s"></a></li>
+					<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="1s"></a></li>
+				</ul>
+			</div>-->
+
+		</div>
+	</div>
+
+	<div class="col-md-12 col-sm-12">
+		<div class="copyright-text wow bounceIn">
+			
+		</div>
+	</div>
+
+</footer>
+
+<!-- Javascript 
+================================================== -->
+<script src="https://viratcoolingsystems.blob.core.windows.net/jsc/jquery.js"></script>
+<script src="https://viratcoolingsystems.blob.core.windows.net/jsc/bootstrap.min.js"></script>
+<script src="https://viratcoolingsystems.blob.core.windows.net/jsc/smoothscroll.js"></script>
+<script src="https://viratcoolingsystems.blob.core.windows.net/jsc/jquery.nav.js"></script>
+<script src="https://viratcoolingsystems.blob.core.windows.net/jsc/jquery.parallax.js"></script>
+<script src="https://viratcoolingsystems.blob.core.windows.net/jsc/owl.carousel.min.js"></script>
+<script src="https://viratcoolingsystems.blob.core.windows.net/jsc/isotope.min.js"></script>
+<script src="https://viratcoolingsystems.blob.core.windows.net/jsc/wow.min.js"></script>
+<script src="https://viratcoolingsystems.blob.core.windows.net/jsc/counter.js"></script>
+<script src="https://viratcoolingsystems.blob.core.windows.net/jsc/custom.js"></script>
+
+<script src="https://viratcoolingsystems.blob.core.windows.net/jsc/modernizr.custom.js"></script>
+<script type="text/javascript" src="https://viratcoolingsystems.blob.core.windows.net/jsc/multiverse.js"></script>
+<script type="text/javascript" src="https://viratcoolingsystems.blob.core.windows.net/jsc/classie.js"></script>
+
+    
+    
+<!--    
+    
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/isotope.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/ccounter.js"></script>
+<script src="js/custom.js"></script>
+
+<script src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="js/multiverse.js"></script>
+<script type="text/javascript" src="js/classie.js"></script>
+-->
+    
+
+
 </body>
 </html>
