@@ -149,30 +149,36 @@ p {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  
   text-align: center;
 }
 
 #home .btn-danger {
   background: #ffa400 !important;
+  opacity:0.3;
   margin-right: 20px;
 }
 
 #home .btn-danger:hover {
   background: #ffc400 !important;
+  opacity:1.0
 }
 
 #home .btn {
-  background: #000000;
+  background: rgba(0,0,0,0.1);
   border-color: transparent;
   color: #ffffff;
   font-size: 12px;
   font-weight: bold;
-  padding: 14px 52px;
+  padding: 14px 34px;
+  
   margin-top: 40px;
+  opacity:0.7;
   transition: all 0.4s ease-in-out;
 }
 
 #home .btn:hover {
+	opacity:1.0;
   background: #ffa400;
 }
 
